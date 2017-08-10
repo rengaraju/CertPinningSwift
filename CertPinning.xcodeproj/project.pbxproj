@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ABE16977E04B4B5279F07E2E /* Pods_CertPinning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5C9EF097529CE743A891AB /* Pods_CertPinning.framework */; };
 		C27B34351F3C32B900EB9F0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27B34341F3C32B900EB9F0E /* AppDelegate.swift */; };
 		C27B34371F3C32B900EB9F0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27B34361F3C32B900EB9F0E /* ViewController.swift */; };
 		C27B343A1F3C32BA00EB9F0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27B34381F3C32BA00EB9F0E /* Main.storyboard */; };
 		C27B343C1F3C32BB00EB9F0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C27B343B1F3C32BB00EB9F0E /* Assets.xcassets */; };
 		C27B343F1F3C32BB00EB9F0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27B343D1F3C32BB00EB9F0E /* LaunchScreen.storyboard */; };
+		C27B34491F3C386E00EB9F0E /* githubcom.der in Resources */ = {isa = PBXBuildFile; fileRef = C27B34481F3C386E00EB9F0E /* githubcom.der */; };
+		C27B344D1F3C47DB00EB9F0E /* googlecoin.der in Resources */ = {isa = PBXBuildFile; fileRef = C27B344C1F3C47DB00EB9F0E /* googlecoin.der */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D53FD2F48A68AD49AF08912 /* Pods-CertPinning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CertPinning.release.xcconfig"; path = "Pods/Target Support Files/Pods-CertPinning/Pods-CertPinning.release.xcconfig"; sourceTree = "<group>"; };
+		3F5C9EF097529CE743A891AB /* Pods_CertPinning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CertPinning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C27B34311F3C32B800EB9F0E /* CertPinning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CertPinning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C27B34341F3C32B900EB9F0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C27B34361F3C32B900EB9F0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		C27B343B1F3C32BB00EB9F0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C27B343E1F3C32BB00EB9F0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C27B34401F3C32BC00EB9F0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C27B34481F3C386E00EB9F0E /* githubcom.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = githubcom.der; sourceTree = "<group>"; };
+		C27B344C1F3C47DB00EB9F0E /* googlecoin.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = googlecoin.der; sourceTree = "<group>"; };
+		C4A380D36FF86F223C3E4657 /* Pods-CertPinning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CertPinning.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CertPinning/Pods-CertPinning.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABE16977E04B4B5279F07E2E /* Pods_CertPinning.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1778FF5F9BC4C2595069C49D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4A380D36FF86F223C3E4657 /* Pods-CertPinning.debug.xcconfig */,
+				0D53FD2F48A68AD49AF08912 /* Pods-CertPinning.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		699F6FA30EA26D8A99344B97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F5C9EF097529CE743A891AB /* Pods_CertPinning.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C27B34281F3C32B700EB9F0E = {
 			isa = PBXGroup;
 			children = (
 				C27B34331F3C32B800EB9F0E /* CertPinning */,
 				C27B34321F3C32B800EB9F0E /* Products */,
+				1778FF5F9BC4C2595069C49D /* Pods */,
+				699F6FA30EA26D8A99344B97 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +82,8 @@
 		C27B34331F3C32B800EB9F0E /* CertPinning */ = {
 			isa = PBXGroup;
 			children = (
+				C27B344C1F3C47DB00EB9F0E /* googlecoin.der */,
+				C27B34481F3C386E00EB9F0E /* githubcom.der */,
 				C27B34341F3C32B900EB9F0E /* AppDelegate.swift */,
 				C27B34361F3C32B900EB9F0E /* ViewController.swift */,
 				C27B34381F3C32BA00EB9F0E /* Main.storyboard */,
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C27B34431F3C32BC00EB9F0E /* Build configuration list for PBXNativeTarget "CertPinning" */;
 			buildPhases = (
+				211AF254DF783EA0AE0752DF /* [CP] Check Pods Manifest.lock */,
 				C27B342D1F3C32B800EB9F0E /* Sources */,
 				C27B342E1F3C32B800EB9F0E /* Frameworks */,
 				C27B342F1F3C32B800EB9F0E /* Resources */,
+				E340A6A3D15536B752E0DBF0 /* [CP] Embed Pods Frameworks */,
+				C462CE763F3ABAC0B3C5DDF9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,12 +158,62 @@
 			buildActionMask = 2147483647;
 			files = (
 				C27B343F1F3C32BB00EB9F0E /* LaunchScreen.storyboard in Resources */,
+				C27B34491F3C386E00EB9F0E /* githubcom.der in Resources */,
+				C27B344D1F3C47DB00EB9F0E /* googlecoin.der in Resources */,
 				C27B343C1F3C32BB00EB9F0E /* Assets.xcassets in Resources */,
 				C27B343A1F3C32BA00EB9F0E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		211AF254DF783EA0AE0752DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C462CE763F3ABAC0B3C5DDF9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CertPinning/Pods-CertPinning-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E340A6A3D15536B752E0DBF0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CertPinning/Pods-CertPinning-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C27B342D1F3C32B800EB9F0E /* Sources */ = {
@@ -261,6 +344,7 @@
 		};
 		C27B34441F3C32BC00EB9F0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4A380D36FF86F223C3E4657 /* Pods-CertPinning.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UECYSF7WKH;
@@ -274,6 +358,7 @@
 		};
 		C27B34451F3C32BC00EB9F0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D53FD2F48A68AD49AF08912 /* Pods-CertPinning.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UECYSF7WKH;
@@ -304,6 +389,7 @@
 				C27B34451F3C32BC00EB9F0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
